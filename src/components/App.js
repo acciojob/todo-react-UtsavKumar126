@@ -28,7 +28,7 @@ const App = () => {
         <input onChange={handleTask} value={task}/>
         <button onClick={handleAddTodo}>Add Todo</button>
         <ul>
-            {task.map((todo, index) => (
+            {AllTask.map((todo, index) => (
               <li key={index}>
                 {todo}
                 <button onClick={() => handleDeleteTodo(index)}>Delete</button>
